@@ -11,11 +11,24 @@
             crossorigin="anonymous">
     </script>
 </head>
+
 <body>
-<-- Section 1 -->
 <header>
     <nav data-hx-trigger="load"
          data-hx-swap="outerHTML"
-         data-hx-get="global.header.partial.html">
+         data-hx-get="global.header-head.partial.html">
     </nav>
 </header>
+<main>
+
+    <-- Section 2 -->
+    <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-hero.partial.html">
+    </section>
+
+</main>
+
+</body>
+</html>
