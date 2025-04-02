@@ -1,22 +1,52 @@
 <section class="reservation">
 
-    <-- form-reservation -->
+    <!-- form-reservation -->
     <div class="reservation-form">
         <h2 class="reservation-form-title">Reservation Form</h2>
         <form class="reservation-form">
             <div class="reservation-form-row">
-                <input type=text" class="reservation__input" placeholder="Your Name" required>
-                <input type=email" class="reservation__input" placeholder="Your Email" required>
+                <label for="reservation-name" class="reservation__label">Your Name</label>
+                <input type="text" id="reservation-name" class="reservation__input" placeholder="Your Name" required>
             </div>
-            <input type="date" class="reservation__input" placeholder="Booking Date" required>
-            <textarea class="reservation__textarea" placeholder="Message" required></textarea>
+            <div class="reservation__form-row">
+                <label for="reservation-email" class="reservation__label">Your Email</label>
+                <input type="email" id="reservation-email" class="reservation__input" placeholder="Your Email" required>
+            </div>
+            <div class="reservation__form-row">
+                <label for="reservation-date" class="reservation__label">Booking Date</label>
+                <input type="date" id="reservation-date" class="reservation__input" required>
+            </div>
+            <div class="reservation__form-row">
+                <label for="reservation-message" class="reservation__label">Message</label>
+                <textarea id="reservation-message" class="reservation__textarea" placeholder="Message"
+                          required></textarea>
+            </div>
             <button type="submit" class="reservation__button">BOOK TABLE NOW</button>
         </form>
+        <div>
+            <img src="images/food-7.png" alt="Grilled steak with rosemary and mushrooms" class="hero__image">
+        </div>
+
+        <!-- will add info-->
+        <div class="app-section">
+            <h2 class="app-section__card food-card">
+                <img src="images/food-5.png" alt="Delicious Korean-style platter" class="food-card__image">
+            </h2>
+        </div>
     </div>
 
-    <div class="app-section">
-        <h2 class="app-section__card food-card">
-            <img src="mixed-plate.png" alt="Mixed Dish" class="food-card__image">
-        </h2>
+    <div class="app-promo">
+        <h3 class="app-promo__title">Lorem ipsum dolor sit amet consectetur</h3>
+        <p class="app-promo__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, iusto!
+            Repellendus quidem officia dolore amet
+        </p>
+        <div class="app-promo__stores">
+            <a href="#" class="app-promo__store-link">
+                <img src="images/apple.png" alt="Download on the App Store" class="app-promo__store-image"/>
+            </a>
+            <a href="#" class="app-promo__store-link">
+                <img src="images/google.png" alt="Get it on Google Play" class="app-promo__store-image"/>
+            </a>
+        </div>
     </div>
 </section>
